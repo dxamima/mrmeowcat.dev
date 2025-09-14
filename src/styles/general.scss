@@ -1,0 +1,102 @@
+@import './fonts.css';
+:root {
+    --sans: "DM Sans", "Nunito", sans-serif;
+
+    --text-primary: #ececec;
+    --text-secondary: #d3d3d3;
+    --text-quaternary: #d8d8d8;
+    --text-prominent: #80b5de;
+
+    --background-primary: #191919;
+    --background-secondary: #191919;
+    --background-tertiary: #191919;
+
+    --button-background: #80b5de;
+    --button-background-hover: #80b5de;
+    --button-background-border: #80b5de;
+
+    --shadow-color: #0000001a;
+    --text-size-adjust: 100%;
+}
+
+/* Actually apply the styles to elements */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--sans);
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--sans);
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-prominent);
+    font-family: var(--sans);
+}
+
+p {
+    color: var(--text-secondary);
+}
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+        margin-bottom: 0.5rem;
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        margin-top: -15px;
+        color: var(--text-secondary);
+        font-size: 1.1rem;
+    }
+
+    .content-box {
+        border: 1.9px solid var(--button-background-hover);
+        border-radius: 8px;
+        padding: 1.5rem;
+        background-color: rgba(128, 181, 222, 0.05);
+    }
+
+    .content-box p {
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            padding: 1rem;
+        }
+        
+        .hero h1 {
+            font-size: 2rem;
+        }
+    }
+
+a {
+  color: #80b5de;
+  font-weight: bold;
+}
+

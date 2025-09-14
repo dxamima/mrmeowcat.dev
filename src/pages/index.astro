@@ -1,11 +1,27 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import LayoutPage from "@/layouts/LayoutPage.astro";
+import LayoutSocial from "@/layouts/LayoutSocial.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<LayoutPage>
+    <main class="container">
+        <div class="hero">
+            <h1>hiya, i'm david!</h1>
+            <p class="subtitle">Get to know what I'm interested in, and what I try to make.</p>
+        </div>
+        
+        <div class="content-box">
+            <p>
+                My name is David, and I'm someone who's passionate about Apple software, like iOS / macOS.
+                <br/><br/>
+                Most of my projects are open-source, so that people can learn from them and contribute to them.
+                <br/><br/>
+            </p>
+        </div>
+        <div class="hero">
+        <h2>Contact</h2>
+        Contact me at <a href="mailto:me@mrmeowcat.dev">me@mrmeowcat.dev</a> or shoot a message in Discord (@meowingeveryday) or Telegram (@mrmeowcat)!
+        </div>
+    </main>
+</LayoutPage>
+<LayoutSocial />
