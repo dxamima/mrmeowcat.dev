@@ -1,6 +1,6 @@
 <?php
 //Default Configuration
-$CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"theme":"dark"}';
+$CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"theme":"light"}';
 
 /**
  * H3K ~ Tiny File Manager V2.6
@@ -13,7 +13,7 @@ $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":
 define('VERSION', '2.6');
 
 //Application Title
-define('APP_TITLE', 'Tiny File Manager');
+define('APP_TITLE', 'davids file manager');
 
 // --- EDIT BELOW CONFIGURATION CAREFULLY ---
 
@@ -26,8 +26,8 @@ $use_auth = true;
 // Users: array('Username' => 'Password', 'Username2' => 'Password2', ...)
 // Generate secure password hash - https://tinyfilemanager.github.io/docs/pwd.html
 $auth_users = array(
-    'admin' => 'okhPMirI6fhhSJamrQkpPkcscMljaV8KTBlkRzIS9p05xGkc46Gah6hU94YbpQQyf5GYbLMwy8lj7X0QkRCxXnnHB1RBjPDdfwAkJAYYC5ydDPDUM6wDXOpibmVs1F4w', //admin@123
-    'david' => 'okhPMirI6fhhSJamrQkpPkcscMljaV8KTBlkRzIS9p05xGkc46Gah6hU94YbpQQyf5GYbLMwy8lj7X0QkRCxXnnHB1RBjPDdfwAkJAYYC5ydDPDUM6wDXOpibmVs1F4w' //12345
+    'admin' => '$2y$10$we3fy2QAYoAC9r5mBNnHAOwge/OeF13h7o3uRDkebvNULWwh.Pawa',
+    'david' => '$2y$10$we3fy2QAYoAC9r5mBNnHAOwge/OeF13h7o3uRDkebvNULWwh.Pawa'
 );
 
 // Readonly users
@@ -37,7 +37,7 @@ $readonly_users = array(
 );
 
 // Global readonly, including when auth is not being used
-$global_readonly = false;
+$global_readonly = true;
 
 // user specific directories
 // array('Username' => 'Directory path', 'Username2' => 'Directory path', ...)
@@ -55,7 +55,7 @@ $edit_files = true;
 
 // Default timezone for date() and time()
 // Doc - http://php.net/manual/en/timezones.php
-$default_timezone = 'Etc/UTC'; // UTC
+$default_timezone = 'Europe/Rome'; // UTC
 
 // Root path for file manager
 // use absolute path of directory i.e: '/var/www/folder' or $_SERVER['DOCUMENT_ROOT'].'/folder'
