@@ -1,6 +1,6 @@
 <?php
 //Default Configuration
-$CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"theme":"light"}';
+$CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"theme":"dark"}';
 
 /**
  * H3K ~ Tiny File Manager V2.6
@@ -27,21 +27,22 @@ $use_auth = true;
 // Generate secure password hash - https://tinyfilemanager.github.io/docs/pwd.html
 $auth_users = array(
     'admin' => '$2y$10$we3fy2QAYoAC9r5mBNnHAOwge/OeF13h7o3uRDkebvNULWwh.Pawa',
-    'david' => '$2y$10$we3fy2QAYoAC9r5mBNnHAOwge/OeF13h7o3uRDkebvNULWwh.Pawa'
+    'david' => '$2y$10$we3fy2QAYoAC9r5mBNnHAOwge/OeF13h7o3uRDkebvNULWwh.Pawa',
+    'fra' => '$2y$10$m.W1/ibwZjMOZMqy95xi8OzPe5EkXI3XCYtllbtTjd79FZ21T8qlK'
 );
 
 // Readonly users
 // e.g. array('users', 'guest', ...)
 $readonly_users = array(
-    'user'
+    'fra'
 );
 
 // Global readonly, including when auth is not being used
-$global_readonly = true;
+$global_readonly = false;
 
 // user specific directories
 // array('Username' => 'Directory path', 'Username2' => 'Directory path', ...)
-$directories_users = array();
+$directories_users = array('fra' => 'papa-ha-dato-un-ordine');
 
 // Enable highlight.js (https://highlightjs.org/) on view's page
 $use_highlightjs = true;
